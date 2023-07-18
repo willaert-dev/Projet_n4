@@ -160,7 +160,9 @@ h3 {
 .container_menu article {
     display: flex;
     width: 302px;
-    align-items: center;    
+    align-items: center;
+    margin-left: 20px;
+    flex-wrap: none;    
  }
 
  article.choix  {
@@ -179,8 +181,8 @@ h3 {
     align-items: center;    
     border-radius: 20px;
     position: relative;
-    margin: 10px 0px;
-    margin-left: 10Px;
+    margin: 10px 30px 10px 0;
+   
     background: #F6F6F6;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);  
  }
@@ -203,22 +205,22 @@ h3 {
         display:flex;
         flex-direction: column;
         padding-left: 20px;
-    }   
- }
- section #fonctionnement {
+    } 
+ }  
+
+ section#fonctionnement {
     display:flex;
     flex-direction:column;
+    padding: 20px;    
  }
-
 #fonctionnement { 
     display: flex;
     justify-content: center;    
     left:-30px;
-    
-    }
+}    
+
 i.fa-mobile-screen-button {
-    display: flex; 
-       
+    display: flex;       
     color:#7E7E7E;
     font-size:15px;    
     padding-left:24px;
@@ -244,11 +246,11 @@ i.fa-store {
 }
 .choix  { 
     display:flex;  
-    padding:0;   
+     
     text-align: center;
     font-size:16px;
-    font-weight:500;      
-}
+    font-weight:500;
+         
 
 .circle {
     width: 20px;
@@ -263,7 +265,7 @@ i.fa-store {
     text-align: center;    
     position: absolute;
     left:-14px;    
-}
+}}
 /***menu-card**/
 article.card {
     margin-bottom: 12px;
@@ -284,7 +286,7 @@ article.card {
     flex-direction: column;
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 170px;  
+    height: 160px;  
     object-fit: cover;
     position: relative;    
 }
@@ -322,6 +324,7 @@ article.card {
     font-weight: 700;    
     color: black;       
     padding-left: 13px;
+    position: relative;
 }
 .menu-card .card-subtitle {
     font-size:14px;
@@ -329,12 +332,20 @@ article.card {
 .card-text h3 {
     font-size: 1.2em;
     font-weight: 700;
-    margin: 15px 0 0 0;
+    margin: 15px 0;
 }
 .card-text p {
     font-size: 1em;
-    font-weight: 300;
-    padding-bottom: 10px;
+    font-weight: 300;    
+}
+.card-text i {   
+    display: block;
+    width: 100%;
+    font-size:larger;
+    position: absolute;
+    bottom: 25px;
+    left: 293px;
+    
 }
 .title-menu h3 {
     display: flex;
@@ -365,7 +376,7 @@ article.card {
     font-style: italic;
     margin: 17px;
 }
-.menu-card i {
+.menu-card i {    
     font-weight:100;
 }
 .container-card .title-entree h3 {
@@ -394,6 +405,10 @@ article.card {
 } 
 .colonne {
     display: flex;
-    flex-direction: column;   
-
+    flex-direction: row;
 }      
+article .colonne.i .p {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
