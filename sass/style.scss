@@ -116,7 +116,8 @@ i.fa-location-dot {
 }
 .slogan_title {
     display: flex;    
-    height: 46px;    
+    height: 46px;
+    padding-left: 20px ;    
 }
 
 
@@ -162,9 +163,8 @@ h3 {
     width: 302px;
     align-items: center;
     margin-left: 20px;
-    flex-wrap: none;    
+     
  }
-
  article.choix  {
     display: flex;    
     width:302px;  
@@ -175,7 +175,7 @@ h3 {
  }
  .choix {
     width: 100%;
-    height: 73px;
+    height:73px;
     display: flex;
     flex-direction: row;    
     align-items: center;    
@@ -188,27 +188,27 @@ h3 {
  }
  .menu_selection {
     background-color: #F6F6F6;
-    h2 {
-        margin: 0;
-        padding-top: 15px;
+    .container_menu h2 {
+        width: 275px;
+        height: 68px;
+        margin-left: 42px;
+        padding-top: 15px;        
     }
  }
  .container_menu  {    
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center;   
-    
+    justify-content: center;
+    margin-left: 20px; 
     h2 {
-        padding-left:20px;
-    }        
+        font-size: 22px;
+    }       
     article {
         display:flex;
-        flex-direction: column;
-        padding-left: 20px;
+        flex-direction: column;        
     } 
- }  
-
- section#fonctionnement {
+ } 
+section#fonctionnement {
     display:flex;
     flex-direction:column;
     padding: 20px;    
@@ -245,12 +245,11 @@ i.fa-store {
     padding-right: 10px;     
 }
 .choix  { 
-    display:flex;  
-     
+    display:flex;     
     text-align: center;
     font-size:16px;
     font-weight:500;
-         
+    margin-left: 25px;     
 
 .circle {
     width: 20px;
@@ -264,7 +263,8 @@ i.fa-store {
     color: #EAEAEA;       
     text-align: center;    
     position: absolute;
-    left:-14px;    
+    left:-14px;
+        
 }}
 /***menu-card**/
 article.card {
@@ -280,7 +280,6 @@ article.card {
 .restaurant {
     background:#F6F6F6;
 }
-
 .menu-card .card img {
     display: flex;
     flex-direction: column;
@@ -319,33 +318,34 @@ article.card {
     display: flex;
     flex-direction: column;        
 }
-.menu-card .card-text  {
+.menu-card .card-text {
+    display: flex;
+    flex-direction: column;  
     width:100%;   
     font-weight: 700;    
     color: black;       
     padding-left: 13px;
     position: relative;
+    line-height: 0.5em;
 }
 .menu-card .card-subtitle {
     font-size:14px;
 }
-.card-text h3 {
+.card-text h3 {   
     font-size: 1.2em;
     font-weight: 700;
     margin: 15px 0;
 }
-.card-text p {
+.card-text p {   
     font-size: 1em;
     font-weight: 300;    
 }
 .card-text i {   
     display: block;
-    width: 100%;
-    font-size:larger;
+    width: 100%; 
     position: absolute;
-    bottom: 25px;
-    left: 293px;
-    
+    top :30%;
+    left: 293px;   
 }
 .title-menu h3 {
     display: flex;
@@ -365,8 +365,8 @@ article.card {
     font-weight: 400;
 }
  article p {
-    font-size: 1.2em;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 500;
        
 }
 .menu-card h4 {
@@ -391,9 +391,10 @@ article.card {
 
 /**footer**/
 .footer {
+    width:100%;
     background-color: #353535;    
-    padding-left:25px;
-    padding-top: 22px;    
+    padding-left:20px;
+    padding-top: 20px;    
     h5 {        
         width: 100%;
         height: 27px;  
@@ -403,12 +404,37 @@ article.card {
         color: #fff;                
     }  
 } 
-.colonne {
+.colonne {  
+    height: 99px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin:20px;
 }      
-article .colonne.i .p {
-    width: 100%;
+.footer-link {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer p {
+    margin: 8px;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer i {
+    color: white;
+    padding-right: 4px;
+    
+}
+.footer .fin {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer b {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
 }

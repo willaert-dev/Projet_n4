@@ -123,6 +123,7 @@ i.fa-location-dot {
 .slogan_title {
   display: flex;
   height: 46px;
+  padding-left: 20px;
 }
 
 /**main menu**/
@@ -167,7 +168,6 @@ h3 {
   width: 302px;
   align-items: center;
   margin-left: 20px;
-  flex-wrap: none;
 }
 
 article.choix {
@@ -194,8 +194,10 @@ article.choix {
 .menu_selection {
   background-color: #F6F6F6;
 }
-.menu_selection h2 {
-  margin: 0;
+.menu_selection .container_menu h2 {
+  width: 275px;
+  height: 68px;
+  margin-left: 42px;
   padding-top: 15px;
 }
 
@@ -203,14 +205,14 @@ article.choix {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 20px;
 }
 .container_menu h2 {
-  padding-left: 20px;
+  font-size: 22px;
 }
 .container_menu article {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
 }
 
 section#fonctionnement {
@@ -258,6 +260,7 @@ i.fa-store {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
+  margin-left: 25px;
 }
 .choix .circle {
   width: 20px;
@@ -337,11 +340,14 @@ article.card {
 }
 
 .menu-card .card-text {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   font-weight: 700;
   color: black;
   padding-left: 13px;
   position: relative;
+  line-height: 0.5em;
 }
 
 .menu-card .card-subtitle {
@@ -362,9 +368,8 @@ article.card {
 .card-text i {
   display: block;
   width: 100%;
-  font-size: larger;
   position: absolute;
-  bottom: 25px;
+  top: 30%;
   left: 293px;
 }
 
@@ -387,8 +392,8 @@ article.card {
 }
 
 article p {
-  font-size: 1.2em;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .menu-card h4 {
@@ -417,9 +422,10 @@ article p {
 
 /**footer**/
 .footer {
+  width: 100%;
   background-color: #353535;
-  padding-left: 25px;
-  padding-top: 22px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 .footer h5 {
   width: 100%;
@@ -431,12 +437,41 @@ article p {
 }
 
 .colonne {
+  height: 99px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin: 20px;
 }
 
-article .colonne.i .p {
-  width: 100%;
+.footer-link {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 8px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer i {
+  color: white;
+  padding-right: 4px;
+}
+
+.footer .fin {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer b {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
