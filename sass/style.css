@@ -1,13 +1,19 @@
-:root {
-  font-family: "Roboto";
-}
-
 body {
   width: 100%;
   max-width: 1440px;
+  max-width: 100vw;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+h2 {
+  margin: 0;
 }
 
 /**menu-la palette du gout**/
@@ -64,11 +70,7 @@ nav {
   font-size: 20px;
 }
 
-/**main-contenu**/
-.section {
-  display: flex;
-}
-
+/**section search-bar**/
 section.search_bar {
   width: 100%;
   height: 49px;
@@ -78,6 +80,8 @@ section.search_bar {
 }
 
 #research {
+  width: 109px;
+  height: 19px;
   border: none;
   background-color: #EAEAEA;
   display: flex;
@@ -96,7 +100,6 @@ section.search_bar {
   text-align: center;
   border: none;
   background-color: #EAEAEA;
-  padding-left: 90px;
 }
 
 i.fa-location-dot {
@@ -114,19 +117,23 @@ i.fa-location-dot {
   justify-content: center;
 }
 
-.section_title h2 {
-  width: 100%;
+/** section-slogan**/
+.section_title {
+  font-size: 20px;
+  font-weight: 700;
   text-align: center;
+  margin-left: 25px;
   padding: 0 10px;
 }
 
 .slogan_title {
   display: flex;
   height: 46px;
-  padding-left: 20px;
+  justify-content: center;
+  margin-left: 30px;
 }
 
-/**main menu**/
+/**section-Fonctionnement**/
 .container-btn {
   display: flex;
   justify-content: center;
@@ -135,10 +142,14 @@ i.fa-location-dot {
 }
 .container-btn .btn {
   border-radius: 25px;
-  padding: 17px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   margin-top: 27px;
+  margin-bottom: 40px;
 }
 .container-btn .btn .btn-gradient {
   color: #fff;
@@ -184,7 +195,7 @@ article.choix {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 15px;
   position: relative;
   margin: 10px 30px 10px 0;
   background: #F6F6F6;
@@ -215,16 +226,10 @@ article.choix {
   flex-direction: column;
 }
 
-section#fonctionnement {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-#fonctionnement {
+#functioning {
   display: flex;
   justify-content: center;
-  left: -30px;
+  left: -40px;
 }
 
 i.fa-mobile-screen-button {
@@ -277,7 +282,7 @@ i.fa-store {
   left: -14px;
 }
 
-/***menu-card**/
+/**section-menu-card**/
 article.card {
   margin-bottom: 12px;
 }
@@ -365,14 +370,6 @@ article.card {
   font-weight: 300;
 }
 
-.card-text i {
-  display: block;
-  width: 100%;
-  position: absolute;
-  top: 30%;
-  left: 293px;
-}
-
 .title-menu h3 {
   display: flex;
   font-family: "Roboto";
@@ -391,9 +388,9 @@ article.card {
   font-weight: 400;
 }
 
-article p {
+.container-menu article p {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .menu-card h4 {
@@ -402,10 +399,6 @@ article p {
   font-weight: 900;
   font-style: italic;
   margin: 17px;
-}
-
-.menu-card i {
-  font-weight: 100;
 }
 
 .container-card .title-entree h3 {
@@ -420,12 +413,25 @@ article p {
   width: 40px;
 }
 
+.menu-card i {
+  display: block;
+  height: 21px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.menu-card .card-text {
+  display: flex;
+}
+
 /**footer**/
 .footer {
   width: 100%;
   background-color: #353535;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 .footer h5 {
   width: 100%;
@@ -474,4 +480,43 @@ article p {
   color: white;
   font-size: 16px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 632.98px) {
+  /**section-Slogan**/
+  .menu-title .slogan_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  .container_menu h2 {
+    font-size: 22px;
+  }
+  .container_menu article {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_menu .choix {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .menu-title .slogan_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container_menu {
+    display: flex;
+    margin-left: 20px;
+  }
+  .container_menu h2 {
+    font-size: 22px;
+  }
 }/*# sourceMappingURL=style.css.map */
