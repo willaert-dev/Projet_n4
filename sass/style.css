@@ -500,7 +500,10 @@ article.choix2 h3 {
   align-items: center;
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 9px;
+  border-radius: 15px;
 }
 
 .choix2 h3 {

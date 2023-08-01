@@ -442,7 +442,6 @@ article.choix2 h3 {
 .menu-text p {
     display: flex;
 }
-
 .choix2 {
     width: 100%; 
     display:flex;
@@ -450,7 +449,10 @@ article.choix2 h3 {
     align-items: center;     
     font-size:16px;
     font-weight:500;
-    margin-bottom:40px;
+    margin:12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    padding:9px;
+    border-radius:15px;
      
 }.choix2 h3 { 
     width: 287px;
@@ -479,6 +481,7 @@ span {
     width: 80%;
     display: flex;
     flex-direction: column;
+    
 
 }
 /**footer**/
