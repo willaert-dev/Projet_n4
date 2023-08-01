@@ -64,12 +64,6 @@ nav {
   font-size: 20px;
 }
 
-article .price {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 /**section search-bar**/
 section.search_bar {
   width: 100%;
@@ -148,7 +142,6 @@ i.fa-location-dot {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 27px;
 }
 .container-btn .btn {
   border-radius: 25px;
@@ -159,7 +152,6 @@ i.fa-location-dot {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   margin-top: 27px;
-  margin-bottom: 40px;
 }
 .container-btn .btn .btn-gradient {
   color: #fff;
@@ -191,7 +183,7 @@ i.fa-location-dot {
 
 article.choix {
   display: flex;
-  width: 302px;
+  width: 100%;
   border-radius: 25px;
   background-color: #F6F6F6;
   border: black 2px solid;
@@ -428,7 +420,7 @@ article.choix2 h3 {
 
 /**menu-restaurant**/
 .main-container {
-  width: 375px;
+  width: 100%;
 }
 
 .picture-food {
@@ -440,13 +432,12 @@ article.choix2 h3 {
 
 .title-entree h3 {
   margin-top: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   border-bottom: #99E2D0 3px solid;
   padding-bottom: 6px;
   width: 40px;
   font-size: 16px;
   font-weight: 300;
-  padding-left: 15px;
 }
 
 .title-entree p {
@@ -503,15 +494,53 @@ article.choix2 h3 {
 }
 
 .choix2 {
-  width: 340px;
+  width: 100%;
   display: flex;
-  text-align: center;
+  justify-content: space-around;
+  align-items: center;
   font-size: 16px;
   font-weight: 500;
-  margin-left: 35px;
+  margin-bottom: 40px;
+}
+
+.choix2 h3 {
+  width: 287px;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.choix2 P {
+  width: 287px;
+  margin: 0;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.choix2 .price {
+  width: 10%;
+  padding-top: 20px;
+}
+
+span {
+  text-align: right;
+}
+
+.choix2 .repas {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
 /**footer**/
+footer {
+  margin: 0;
+}
+
 .footer {
   max-width: 1440px;
   background-color: #353535;
