@@ -17,17 +17,25 @@ h2 {
 /**header**/
 .header {
     display: flex;
-    align-items: start;
-    
+    align-items: start;    
     height: 63px;    
+}.logo_texte {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
 }
-
+.logo_texte h1  {
+    display: flex;  
+    font-family: 'shrikhand';
+    margin-top: 14px;
+    position: relative;       
+}
 h1 { 
     display: flex;  
     font-family: 'shrikhand';
     margin-top: 14px;
     position: relative; 
-    padding-left: 105px;  
+    justify-content: center; 
 }
 nav {   
     display: flex;
@@ -53,13 +61,13 @@ nav {
     }
    
 .nav i {
-       position: absolute;
-       top: 22px;
-       left: 32px;
+       width: 30px;
+       height:30px;
+       margin-left: 17px;       
        font-size: 20px;
 }
-.nav-bar .logo_text {
-
+.nav-bar i {
+    text-decoration: none;
 }
  /**section search-bar**/
 section.search_bar {
@@ -100,7 +108,8 @@ i.fa-location-dot {
     padding: 0px 10px;
     margin: 5px;
 }
-.search_bar {    
+.search_bar {   
+
     display: flex;
     justify-content: center;
 }     
@@ -110,19 +119,30 @@ i.fa-location-dot {
     justify-content: center;
 
 }
-.title-section  {
-    font-family: 'roboto';
-    width:275px; 
+.title-section  {    
+    font-family: 'roboto';    
     height: 68px;  
     font-size: 20px;
     font-weight:700;
     text-align: center;
     padding-left: 68px;       
 }
+.menu_selection .title-section h3 {
+    display: flex;
+    width:100%;
+    height: 68px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'roboto';
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
 .slogan_title p {
     color:#353535;
     height:46px;
     display: flex;
+    justify-content: center;
     font-family: 'roboto';
     font-size: 18px;
     font-weight: 300;
@@ -195,7 +215,7 @@ i.fa-location-dot {
     margin-top: -24px;
  }
  .container_menu .choix {
-    width: 90%;
+    width: 100%;
  }
 .container_menu h2 {     
      height: 68px;        
@@ -214,8 +234,8 @@ i.fa-location-dot {
 article {
     width:100%;
     display:flex;
-    flex-direction: column;     
-} 
+    flex-direction: column;
+}
 i.fa-mobile-screen-button {
     display: flex;       
     color:#7E7E7E;
@@ -347,24 +367,53 @@ article.card {
     font-size: 16px;
     font-weight: 300; 
 }
-/**.choice-heart {
+.choice-heart {
     padding-right: 20px;
-}**/
-.choice-heart i {    
+    width: 24px;
+    height: 24px;
+}
+
+.choice-heart i {       
     display: flex;
     margin-bottom: 10px;
     margin-right: 25px;
-    font-size: 26px;    
+    font-size: 26px;
+    position: absolute;
 }
-.menu_title .heart {
-    margin-right: 12px;
+.heart-full {
+    opacity:0;
+   
 }
-.heart i {
-    width: 22px;
-    height: 21px;
-    margin-top: 15px;
-    margin-right: 25px;   
-    } 
+.heart-full:hover {
+    width: 100%;
+    opacity: 1;
+    color: #9356DC;    
+    transition-property:none;
+    transition-duration: 1000ms; 
+    transition-delay: 2s;  
+}
+ 
+.heart-choice i {
+    background-color:#fff;    
+    display: flex;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    font-size: 26px;  
+    position: absolute; 
+}
+.heart-choice-2  {        
+    display: flex;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    font-size: 26px; 
+    position: relative;
+    top:25px;
+      
+}
+.heart-full-2 {
+    opacity:0;
+    
+}
 .container-menu article p {
     font-size: 16px;
     font-weight: 300;       
@@ -395,6 +444,10 @@ article.choix2 h3 {
     height: 275px; 
     object-fit: cover;
 }
+.title-entree {
+    padding-left: 12px;
+}
+
 .title-entree h3 {  
     margin-top: 15px;    
     border-bottom:#99E2D0 3px solid;
@@ -403,6 +456,7 @@ article.choix2 h3 {
     font-size: 16px;
     font-weight: 300;    
 } 
+
 .title-entree p {
     font-family: 'Roboto';
     font-size: 15px;
@@ -417,7 +471,7 @@ article.choix2 h3 {
     position: relative;
     top:-50px;
    
-   }
+}
 .restofood .menu_title {    
     display: flex;
     border-radius: 15px;       
@@ -433,9 +487,7 @@ article.choix2 h3 {
 }
 .card-food {
     display: flex;
-    flex-direction: column;
- 
-    padding-left: 12px;
+    flex-direction: column;    
     margin:0;
 }
 .menu-text  {
@@ -452,22 +504,26 @@ article.choix2 h3 {
 .menu-text p {
     display: flex;
 }
+.transition-1 article {
+    align-items: center;
+}
 article .shadows-box  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 95%;
     height: 270px;
 }
 .choix2 {
     width: 95%; 
-    display:flex;
+    display:flex;   
     justify-content: space-around; 
     align-items: center;     
     font-size:16px;
     font-weight:500;
     margin-bottom: 13px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    padding: 12px;
-    border-radius:15px;
-     
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);    
+    border-radius:23px;     
 }
 .choix2 h3 {    
     margin: 0;   
@@ -486,7 +542,11 @@ article .shadows-box  {
 }
 .choix2 .price {
    width:10%; 
-   padding-top: 20px;
+   display: flex;
+   height: 100%;
+   justify-content: flex-end;
+   align-items: flex-end;
+   padding-bottom: 30px;
 }
 span {
     text-align:right;
@@ -495,6 +555,30 @@ span {
     width: 80%;
     display: flex;
     flex-direction: column;
+    padding:13px;
+}
+.validation {  
+    position: relative;  
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background-color: #99E2D0;
+    color: #fff;
+    height: 67px;      
+    border-radius: 0 20px 20px 0;    
+    opacity: 0;
+    width: 5%; 
+    transition-duration: 1s, 0.5s;
+    transition-property: width, opacity;
+    transition-delay: 0s, 0.5s;
+}
+/**.validation i {     
+    font-size: 20px;    
+}**/
+.validation:hover {     
+    width: 20%; 
+    height:67px;  
+    opacity: 1;        
 }
 .container-btn-2 {   
     display: flex;
