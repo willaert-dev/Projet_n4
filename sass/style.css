@@ -175,8 +175,9 @@ i.fa-location-dot {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
+  cursor: pointer;
   padding-bottom: 20px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   margin-top: 27px;
   margin-bottom: 57px;
@@ -187,6 +188,13 @@ i.fa-location-dot {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
+}
+.container-btn .btn.btn:hover {
+  cursor: pointer;
+  padding-bottom: 20px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1254901961);
+  opacity: 0.7;
 }
 
 .restaurant .title-menu h2 {
@@ -433,31 +441,39 @@ article.card {
   width: 100%;
   opacity: 1;
   color: #9356DC;
-  transition-property: none;
   transition-duration: 1000ms;
-  transition-delay: 2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
 }
 
-.heart-choice i {
-  background-color: #fff;
+.heart_menu-2 {
+  padding-right: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.heart_menu-2 i {
   display: flex;
   margin-bottom: 10px;
   margin-right: 25px;
   font-size: 26px;
   position: absolute;
-}
-
-.heart-choice-2 {
-  display: flex;
-  margin-bottom: 10px;
-  margin-right: 25px;
-  font-size: 26px;
-  position: relative;
   top: 25px;
+  right: 16px;
 }
 
-.heart-full-2 {
+.heart-2-full {
   opacity: 0;
+}
+
+.heart-2-full:hover {
+  opacity: 1;
+  color: #9356DC;
+  transition-duration: 1000ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
 }
 
 .container-menu article p {
@@ -538,7 +554,7 @@ article.choix2 h3 {
   font-family: "shrikhand";
   font-size: 28px;
   font-weight: 400;
-  margin: 17px;
+  margin-top: 17px;
 }
 
 .card-food {
@@ -578,7 +594,7 @@ article .shadows-box {
 .choix2 {
   width: 95%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 16px;
   font-weight: 500;
@@ -604,6 +620,11 @@ article .shadows-box {
   text-overflow: ellipsis;
 }
 
+.price {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .choix2 .price {
   width: 10%;
   display: flex;
@@ -611,6 +632,7 @@ article .shadows-box {
   justify-content: flex-end;
   align-items: flex-end;
   padding-bottom: 30px;
+  margin-right: 12px;
 }
 
 span {
@@ -622,6 +644,9 @@ span {
   display: flex;
   flex-direction: column;
   padding: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .validation {
@@ -640,9 +665,6 @@ span {
   transition-delay: 0s, 0.5s;
 }
 
-/**.validation i {     
-    font-size: 20px;    
-}**/
 .validation:hover {
   width: 20%;
   height: 67px;
@@ -659,11 +681,18 @@ span {
   padding-left: 49px;
   padding-right: 49px;
   padding-top: 15px;
+  cursor: pointer;
   padding-bottom: 15px;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   margin-top: 27px;
   margin-bottom: 57px;
+}
+.container-btn-2 .btn-2:hover {
+  cursor: pointer;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  opacity: 0.7;
 }
 .container-btn-2 .btn-2 .btn-2-gradient {
   color: #fff;
