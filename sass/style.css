@@ -241,7 +241,7 @@ i.fa-location-dot {
   padding-right: 20px;
   padding-top: 20px;
   cursor: pointer;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   margin-top: 27px;
@@ -284,6 +284,7 @@ i.fa-location-dot {
 .container_menu article {
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 article.choix {
@@ -299,11 +300,12 @@ article.choix {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 20px;
   position: relative;
   margin: 10px 30px 10px 0;
   background: #F6F6F6;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  padding-right: 15px;
 }
 
 .menu_selection {
@@ -312,7 +314,7 @@ article.choix {
 }
 
 .container_menu .choix {
-  width: 75%;
+  width: 100%;
 }
 
 .container_menu h2 {
@@ -327,8 +329,8 @@ article.choix {
 }
 
 .container_menu article {
-  width: 85%;
-  padding-left: 32px;
+  width: 86%;
+  margin-left: 45px;
   padding-bottom: 42px;
 }
 
@@ -515,8 +517,7 @@ article.card {
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
   transition-duration: 3000ms;
-  transition-timing-function: ease;
-  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0.3, 0.5, 0.6, 0.94);
   transition-property: all;
 }
 
@@ -527,13 +528,8 @@ article.card {
 }
 
 .heart_menu-2 i {
-  display: flex;
   margin-bottom: 10px;
-  margin-right: 25px;
   font-size: 26px;
-  position: absolute;
-  top: 25px;
-  right: 30px;
 }
 
 .heart_menu {
@@ -592,16 +588,26 @@ article.choix2 h3 {
 }
 
 .title-entree {
-  padding-left: 12px;
+  padding-left: 13px;
 }
 
 .title-entree h3 {
-  margin-top: 15px;
   border-bottom: #99E2D0 3px solid;
   padding-bottom: 12px;
   width: 40px;
   font-size: 16px;
   font-weight: 300;
+}
+
+.transition {
+  opacity: 1;
+  transform: translateY(-1%);
+  transition: transform 1s ease-out 0.3s, opacity 1s ease-out 0.3s;
+}
+
+.transition:active {
+  opacity: 0;
+  transform: translateY(100%);
 }
 
 .title-entree p {
@@ -614,7 +620,8 @@ article.choix2 h3 {
 
 .restofood {
   background-color: #F6F6F6;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   margin-bottom: -50px;
   position: relative;
   top: -50px;
@@ -622,18 +629,19 @@ article.choix2 h3 {
 
 .restofood .menu_title {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 15px;
   padding-left: 12px;
 }
 
 .restofood .menu_title h4 {
-  width: 100%;
   height: 21px;
-  display: flex;
   font-family: "shrikhand";
   font-size: 28px;
   font-weight: 400;
   margin-top: 17px;
+  margin-right: 30px;
 }
 
 .card-food {
@@ -826,7 +834,7 @@ footer .colonne p, a {
   .container_menu {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    width: 100%;
   }
   .container_menu article {
     display: flex;
@@ -852,26 +860,19 @@ footer .colonne p, a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     height: 270px;
-  }
-  .choix2 {
-    width: 634px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 13px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 23px;
   }
   .container_menu .choix {
     width: 100%;
   }
+  .title-entree {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
   .restofood {
     background-color: #F6F6F6;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     margin-bottom: -50px;
     position: relative;
     top: -50px;
@@ -906,8 +907,25 @@ footer .colonne p, a {
     gap: 12px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   /****Page restaurant****/
+  .container_menu article {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .container-btn .btn {
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 21px;
+    cursor: pointer;
+    padding-bottom: 15px;
+    background: linear-gradient(#9356DC, #FF79DA);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+    margin-top: 27px;
+    margin-bottom: 57px;
+  }
   article.card {
     width: 40%;
     height: 40%;
@@ -918,12 +936,33 @@ footer .colonne p, a {
   }
   .title-entree {
     padding-top: 12px;
-    padding-left: 260px;
     padding-bottom: 12px;
   }
   .container_card {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .restofood {
+    background-color: #F6F6F6;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: -50px;
+    position: relative;
+    top: -50px;
+    padding: 0px 180px 0px 180px;
+    margin: 0px 193px -50px 192px;
+  }
+  .choix {
+    width: 100%;
+    height: 73px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    margin: 10px 30px 10px 0px;
+    background: #F6F6F6;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   }
 }/*# sourceMappingURL=style.css.map */
