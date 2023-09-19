@@ -387,7 +387,7 @@ article.card {
     border-radius: 2px;
     position: absolute;
     top: 35px;
-    right: 20px;
+  right: 20px;
 }
 .novelty {
     width: 61px;
@@ -532,20 +532,15 @@ article.choix2 h3 {
     font-size: 16px;
     font-weight: 300;
 }
-.card-food.transition_1 {
-    opacity: 2; 
-    transform:translateY(100%);
-    transition: 
-    transform 1s ease-out 0.3s,
-    opacity 1s ease-out 0.3s;
-    }
-    
-.card-food.transition_1:active {
-    opacity: 0;
-    transform: translatey(0);
-   
-    } 
+.transition-1 {
+    opacity: 0;    
+    transition: 3s;
 
+}
+.transition-1 {
+    opacity: 1;   
+   
+}
 .title-entree p {
     font-family: 'Roboto';
     font-size: 15px;
@@ -594,7 +589,7 @@ article.choix2 h3 {
 .menu-text p {
     display: flex;
 }
-.transition-1 article {
+.article {
     align-items: center;
 }
 article .shadows-box {
@@ -754,8 +749,7 @@ footer .colonne p,a {
         }
         h2 {
             font-size: 22px;
-        }}      
-    
+        }}       
     #functioning {
         display: flex;
         margin: 50px 180px 50px 180px;   
@@ -819,8 +813,7 @@ footer .colonne p,a {
         text-decoration: none;
         gap:12px;           
         }
-    }
-        
+    }        
 @media screen and ( min-width:1024px)  {
     /****Page restaurant****/
     .container_menu article {
@@ -866,7 +859,8 @@ footer .colonne p,a {
         top: -50px;
         padding: 0px 180px 0px 180px;
         margin: 0px 193px -50px 192px;
-    }    
+    }  
+  
        .choix {
         width: 100%;
         height: 73px;
