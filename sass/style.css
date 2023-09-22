@@ -91,18 +91,19 @@ h2 {
 
 .logo_texte {
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .logo_texte h1 {
   display: flex;
   font-family: "shrikhand";
+  font-size: 30px;
 }
 
 h1 {
   font-family: "shrikhand";
-  text-align: center;
+  font-size: 30px;
+  display: flex;
+  margin-right: 100px;
 }
 
 nav {
@@ -132,13 +133,10 @@ nav {
 
 .nav i {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  margin-left: 17px;
   font-size: 20px;
   color: black;
-  top: 28px;
-  left: 13px;
+  top: 34px;
+  left: 24px;
 }
 
 .nav-bar i {
@@ -595,6 +593,7 @@ article.choix2 h3 {
 .title-entree1 h3 {
   border-bottom: #99E2D0 3px solid;
   padding-bottom: 12px;
+  margin-left: 13px;
   width: 40px;
   font-size: 16px;
   font-weight: 300;
@@ -818,7 +817,8 @@ footer h5 {
   color: #fff;
 }
 
-footer .colonne p, a {
+footer .colonne p,
+a {
   display: flex;
   margin-bottom: 8px;
   text-decoration: none;
@@ -864,7 +864,8 @@ footer .colonne p, a {
     background-color: #F6F6F6;
     padding: 0px 180px 0px 180px;
   }
-  .menu-card .box1, .box2 {
+  .menu-card .box1,
+  .box2 {
     display: flex;
     gap: 65px;
     margin-bottom: 50px;
@@ -925,7 +926,8 @@ footer .colonne p, a {
     flex-direction: row;
     gap: 45px;
   }
-  .colonne p, a {
+  .colonne p,
+  a {
     display: flex;
     color: white;
     text-decoration: none;
